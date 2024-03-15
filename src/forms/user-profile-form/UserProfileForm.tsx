@@ -27,6 +27,8 @@ const UserProfileForm = ({isLoading, onSave}: Props) => {
     resolver: zodResolver(formSchema)
   });
 
+  console.log(form, 'formcontrol');
+
   return (
     <Form {...form}>
       <form 
