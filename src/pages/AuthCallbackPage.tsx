@@ -15,7 +15,7 @@ const AuthCallbackPage = () => {
       createUser({auth0Id: user.sub, email: user.email});
       hasCreatedUser.current = true;
     }
-    navigate('/user-profile');
+    navigate('/');
 
   }, [createUser, navigate, user]);
 
